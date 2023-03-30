@@ -1,8 +1,11 @@
 #!/bin/bash
-echo "iniciando..."
+echo "fazendo update..."
 sudo apt update
+echo "fazendo upgrade..."
 sudo apt upgrade -y
+echo "instalando cmake..."
 sudo apt install cmake
+echo "instalando libusb..."
 sudo apt install libusb-1.0-0-dev
 echo "instalando osmocom..."
 git clone git://git.osmocom.org/rtl-sdr.git
@@ -18,9 +21,7 @@ cd /etc
 ls
 echo "fazendo o blacklist"
 echo 'blacklist blacklist dvb_usb_rtl28xxu' | sudo tee - append /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf
-
 echo "instalando gnuradio"
 sudo apt install gnuradio libusb-1.0-0 gr-iqbal
 sudo apt-get install gqrx-sdr
-
 echo "tudo pronto!"
