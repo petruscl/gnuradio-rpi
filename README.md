@@ -32,9 +32,9 @@ chmod +x install.sh
 sudo ./install.sh
 ```
 
-### testar
+### testar se o rádio conectou
 ```console
-git clone git://git.osmocom.org/rtl-sdr.git
+rtl_test -t
 ```
 
 ###  A FAZER
