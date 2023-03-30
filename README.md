@@ -20,8 +20,9 @@ hosts{
 em interfaces
 
 * instalar o VNC viewer na máquina cliente:
- sudo dpkg -i VNC-Viewer-7.0.1-Linux-x64.deb 
-
+```console 
+sudo dpkg -i VNC-Viewer-7.0.1-Linux-x64.deb 
+```
 
 ##  instalar o RTL-SDR no Raspberry Pi
 ```console
@@ -47,7 +48,9 @@ sudo apt-get install gqrx-sdr
 ```
 
 ### testar
- git clone git://git.osmocom.org/rtl-sdr.git
+```console
+git clone git://git.osmocom.org/rtl-sdr.git
+```
 
-### A FAZER
+###  A FAZER
 * colocar prints de comentário de cor diferente para acompanhar as etapas mais facilmente no meio do flood de informações que os comandos dão de saída
