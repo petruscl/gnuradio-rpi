@@ -44,12 +44,10 @@ ls
 echo 'blacklist blacklist dvb_usb_rtl28xxu' | sudo tee - append /etc/modprobe.d/blacklist-dvb_usb_rtl28xxu.conf
 sudo apt install gnuradio libusb-1.0-0 gr-iqbal
 sudo apt-get install gqrx-sdr
-
-
-
-
-
 ```
 
 ### testar
  git clone git://git.osmocom.org/rtl-sdr.git
+
+### A FAZER
+* colocar prints de comentário de cor diferente para acompanhar as etapas mais facilmente no meio do flood de informações que os comandos dão de saída
