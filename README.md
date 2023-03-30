@@ -26,6 +26,8 @@ sudo dpkg -i VNC-Viewer-7.0.1-Linux-x64.deb
 
 ##  instalar o RTL-SDR no Raspberry Pi
 ```console
+git clone https://github.com/petruscl/gnuradio-rpi
+cd gnuradio-rpi/
 chmod +x install.sh
 sudo ./install.sh
 ```
