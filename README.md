@@ -4,6 +4,7 @@
 * instalar via raspberry pi imager
 * habilitar ssh e configurar wifi.
 
+```
 user: pi
 pass: engenharia
 hosts{
@@ -11,6 +12,7 @@ hosts{
 	raspberrypi2
 	raspberrypi3
 }
+```
 
 ##  habilitar o VNC
  ping raspberrypi1.local
