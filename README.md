@@ -1,7 +1,10 @@
 # Instruções Sensoriamento Espectral Projeto 1
 
 ## Preparação do Cartão SD 
-* instalar via raspberry pi imager
+* instalar via [raspberry pi imager](https://www.raspberrypi.com/software/)
+```Console
+sudo apt install rpi-imager
+```
 * habilitar ssh e configurar wifi.
 
 ```
@@ -38,6 +41,3 @@ sudo ./install.sh
 ```console
 rtl_test -t
 ```
-
-###  A FAZER
-* colocar prints de comentário de cor diferente para acompanhar as etapas mais facilmente no meio do flood de informações que os comandos dão de saída
