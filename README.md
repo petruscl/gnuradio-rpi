@@ -18,11 +18,16 @@ hosts{
 ```
 
 ##  habilitar o VNC
- ping raspberrypi1.local
- ssh raspberrypi1.local
- sudo raspi-config
+```console
+ping NOME-DA-MAQUINA-REMOTA.local
+```
+Se retornar IP a máquina está disponível para acesso remoto.
 
-em interfaces
+```console
+ssh pi@NOME-DA-MAQUINA-REMOTA.local
+sudo raspi-config
+```
+em interfaces habilite o VNC.
 
 * instalar o VNC viewer na máquina cliente:
 ```console 
@@ -31,6 +36,7 @@ sudo dpkg -i VNC-Viewer-7.0.1-Linux-x64.deb
 
 ##  instalar o RTL-SDR no Raspberry Pi
 ```console
+ssh pi@NOME-DA-MAQUINA-REMOTA.local
 git clone https://github.com/petruscl/gnuradio-rpi
 cd gnuradio-rpi/
 chmod +x install.sh
