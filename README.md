@@ -41,6 +41,3 @@ sudo ./install.sh
 ```console
 rtl_test -t
 ```
-
-###  A FAZER
-* colocar prints de comentário de cor diferente para acompanhar as etapas mais facilmente no meio do flood de informações que os comandos dão de saída
