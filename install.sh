@@ -33,7 +33,7 @@ sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
 cd /etc
 ls
 echo -e "${blue} --------- fazendo o blacklist --------- ${clear}"
-echo -e'blacklist dvb_core\nblacklist dvb_usb_rtl2832u\nblacklist dvb_usb_rtl28xxu\nblacklist dvb_usb_v2\nblacklist r820t\nblacklist rtl2830\nblacklist rtl2832\nblacklist rtl2832_sdr\nblacklist rtl2838\nblacklist rtl8192cu\nblacklist rtl8xxxu\ninstall dvb_core /bin/false\ninstall dvb_usb_rtl2832u /bin/false\ninstall dvb_usb_rtl28xxu /bin/false\ninstall dvb_usb_v2 /bin/false\ninstall r820t /bin/false\ninstall rtl2830 /bin/false\ninstall rtl2832 /bin/false\ninstall rtl2832_sdr /bin/false\ninstall rtl2838 /bin/false\ninstall rtl8192cu /bin/false\ninstall rtl8xxxu /bin/false' | sudo tee - append /etc/modprobe.d/blacklist-rtlsdr.conf 
+echo -e "blacklist dvb_core\nblacklist dvb_usb_rtl2832u\nblacklist dvb_usb_rtl28xxu\nblacklist dvb_usb_v2\nblacklist r820t\nblacklist rtl2830\nblacklist rtl2832\nblacklist rtl2832_sdr\nblacklist rtl2838\nblacklist rtl8192cu\nblacklist rtl8xxxu\ninstall dvb_core /bin/false\ninstall dvb_usb_rtl2832u /bin/false\ninstall dvb_usb_rtl28xxu /bin/false\ninstall dvb_usb_v2 /bin/false\ninstall r820t /bin/false\ninstall rtl2830 /bin/false\ninstall rtl2832 /bin/false\ninstall rtl2832_sdr /bin/false\ninstall rtl2838 /bin/false\ninstall rtl8192cu /bin/false\ninstall rtl8xxxu /bin/false" | sudo tee - append /etc/modprobe.d/blacklist-rtlsdr.conf 
 echo -e "${blue} --------- instalando gnuradio... --------- ${clear}"
 sudo apt install gnuradio libusb-1.0-0 gr-iqbal -y
 sudo apt install gqrx-sdr -y
